@@ -1,0 +1,40 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+
+  --cor-principal: #5A245F;
+   --cor-verde-agua:#00c9c1;
+   --cor-azul-claro:#c0fcf7;
+   --cor-preto:#000000;
+    --cor-branc0:#ffffff;
+}
+#body {  
+    font-family: 'Roboto Mono', sans-serif; 
+}
+#body {
+blackground-color: var(--cor-principal);
+}
+.lead { 
+     font-weight: 700;
+}
+#rodape {
+    blackground-color: var(--cor-preto);
+    color: var(--cor-branc0);
+}
+#ancora {
+    text-decoration: none;
+    color: var(--cor-branc0);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+#ancora:hover {
+    color: var(--cor-azul-claro);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.habilidades:hover .badge { 
+   background-color:var(--cor-branc0) 1important;
+   transform: scale(1.05);
+   transition: ;
+}
