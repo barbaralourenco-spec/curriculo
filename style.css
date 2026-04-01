@@ -1,22 +1,32 @@
-<style>
+/* google fontes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-
-  --cor-principal: #5A245F;
-   --cor-verde-agua:#00c9c1;
-   --cor-azul-claro:#c0fcf7;
-   --cor-preto:#000000;
+    --cor-principal: #5A245F;
+    --cor-verde-agua:#00c9c1;
+    --cor-azul-claro:#c0fcf7;
+    --cor-preto:#000000;
     --cor-branc0:#ffffff;
 }
 #body {  
     font-family: 'Roboto Mono', sans-serif; 
 }
 #body {
-blackground-color: var(--cor-principal);
+     blackground-color: var(--cor-principal);
 }
-.lead { 
-     font-weight: 700;
+.funcao { 
+    color: var(--cor-branco);
+}
+p {
+    color: var(--cor-branco);
+}
+.lead {
+    font-weight: 700;
+    color: var(--cor-branco);
+}
+.titulo_habilidades {
+    font-size: 25px;
+    color: var(--cor-branco);
 }
 #rodape {
     blackground-color: var(--cor-preto);
@@ -34,7 +44,8 @@ blackground-color: var(--cor-principal);
     text-decoration: underline;
 }
 .habilidades:hover .badge { 
-   background-color:var(--cor-branc0) 1important;
-   transform: scale(1.05);
-   transition: ;
+   background-color:var(--cor-branc0) 1important;  
+   color: var(--cor-preto);
+    transform: scale(1.15);
+    transition: 0.3s;
 }
