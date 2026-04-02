@@ -11,9 +11,7 @@
 #body {  
     font-family: 'Roboto Mono', sans-serif; 
     color: var(--cor-azul-claro);
-}
-#body {
-     background-color: var(--cor-principal);
+     background-color: var(--cor-preto);
 }
 .funcao { 
     color: var(--cor-branco);
