@@ -12,7 +12,7 @@
     font-family: 'Roboto Mono', sans-serif; 
 }
 #body {
-     blackground-color: var(--cor-principal);
+     background-color: var(--cor-principal);
 }
 .funcao { 
     color: var(--cor-branco);
@@ -29,7 +29,7 @@ p {
     color: var(--cor-branco);
 }
 #rodape {
-    blackground-color: var(--cor-preto);
+    background-color: var(--cor-preto);
     color: var(--cor-branc0);
 }
 #ancora {
