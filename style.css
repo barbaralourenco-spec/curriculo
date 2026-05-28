@@ -1,50 +1,110 @@
-/* google fontes */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-    --cor-principal: #5A245F;
-    --cor-verde-agua:#00c9c1;
-    --cor-azul-claro:#c0fcf7;
-    --cor-preto:#000000;
-    --cor-branc0:#ffffff;
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
-#body {  
-    font-family: 'Roboto Mono', sans-serif; 
-    color: var(--cor-branc0);
-     background-color: var(--cor-preto);
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
 }
-.funcao { 
-    color: var(--cor-branco);
+
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
-p {
-    color: var(--cor-branco);
+
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
 }
-.lead {
-    font-weight: 700;
-    color: var(--cor-branco);
+
+.titulo-principal span {
+    color: var(--verde);
 }
-.titulo_habilidades {
-    font-size: 25px;
-    color: var(--cor-branco);
+
+.botao {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
-#rodape {
-    background-color: var(--cor-preto);
-    color: var(--cor-branc0);
+
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
 }
-#ancora {
-    text-decoration: none;
-    color: var(--cor-branc0);
-    font-size: 20px;
-    transition: color 0.3s ease;
+
+.botoes {
+    display: block;
 }
-#ancora:hover {
-    color: var(--cor-azul-claro);
-    cursor: pointer;
-    text-decoration: underline;
+
+.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
 }
-.habilidades:hover .badge { 
-   background-color:var(--cor-branc0) 1important;  
-   color: var(--cor-preto);
-    transform: scale(1.15);
-    transition: 0.3s;
+
+.abas-textos {
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.botao.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo-titulo-principal {
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario {
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }
